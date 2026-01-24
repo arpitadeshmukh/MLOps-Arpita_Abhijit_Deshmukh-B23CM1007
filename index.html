@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ML-DLOps Assignment 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #444;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>ML–DLOps Assignment 1</h1>
+
+<p><strong>Name:</strong> Arpita Abhijit Deshmukh<br>
+<strong>Roll No.:</strong> B23CM1007<br>
+<strong>Email ID:</strong> b23cm1007@iitj.ac.in</p>
+
+<hr>
+
+<h2>Report & Code Links</h2>
+<ul>
+  <li><strong>Question 1 (Colab):</strong> <a href="https://colab.research.google.com/drive/15jMj5_K2rrH81WaOkINfthO4JYMyoqOM?usp=sharing">Link</a></li>
+  <li><strong>Question 2 (Colab):</strong> <a href="https://colab.research.google.com/drive/1Ov4oErNKU0z2_K5bxhefOYxpy49O3IIr">Link</a></li>
+  <li><strong>GitHub Repository:</strong> <a href="https://github.com/arpitadeshmukh/MLOps-Arpita_Abhijit_Deshmukh-B23CM1007/tree/Assignment1">Link</a></li>
+</ul>
+
+<hr>
+
+<h2>Question 1(a): CNN Experiments</h2>
+
+<h3>Hyperparameters</h3>
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Values</th>
+  </tr>
+  <tr>
+    <td>Batch Size</td>
+    <td>16, 32</td>
+  </tr>
+  <tr>
+    <td>Optimizer</td>
+    <td>SGD, Adam</td>
+  </tr>
+  <tr>
+    <td>Learning Rate</td>
+    <td>0.001, 0.0001</td>
+  </tr>
+  <tr>
+    <td>Model</td>
+    <td>ResNet-18, ResNet-50</td>
+  </tr>
+  <tr>
+    <td>Pin Memory</td>
+    <td>True, False</td>
+  </tr>
+  <tr>
+    <td>Epochs</td>
+    <td>5, 10</td>
+  </tr>
+</table>
+
+<h3>MNIST Results</h3>
+<table>
+  <tr>
+    <th>Epochs</th>
+    <th>Pin</th>
+    <th>Batch</th>
+    <th>Optim</th>
+    <th>LR</th>
+    <th>ResNet-18</th>
+    <th>ResNet-50</th>
+  </tr>
+  <tr><td>5</td><td>True</td><td>16</td><td>SGD</td><td>0.001</td><td>99.34%</td><td>99.13%</td></tr>
+  <tr><td>5</td><td>True</td><td>16</td><td>SGD</td><td>0.0001</td><td>98.27%</td><td>97.63%</td></tr>
+  <tr><td>5</td><td>True</td><td>16</td><td>Adam</td><td>0.001</td><td>98.92%</td><td>98.93%</td></tr>
+  <tr><td>5</td><td>True</td><td>16</td><td>Adam</td><td>0.0001</td><td>99.11%</td><td>99.05%</td></tr>
+  <tr><td>5</td><td>False</td><td>32</td><td>SGD</td><td>0.001</td><td>99.03%</td><td>98.93%</td></tr>
+  <tr><td>5</td><td>False</td><td>32</td><td>SGD</td><td>0.0001</td><td>96.70%</td><td>94.67%</td></tr>
+  <tr><td>5</td><td>False</td><td>32</td><td>Adam</td><td>0.001</td><td>99.18%</td><td>98.51%</td></tr>
+  <tr><td>5</td><td>False</td><td>32</td><td>Adam</td><td>0.0001</td><td>99.09%</td><td>99.15%</td></tr>
+</table>
+
+<h3>FashionMNIST Results</h3>
+<table>
+  <tr>
+    <th>Epochs</th>
+    <th>Pin</th>
+    <th>Batch</th>
+    <th>Optim</th>
+    <th>LR</th>
+    <th>ResNet-18</th>
+    <th>ResNet-50</th>
+  </tr>
+  <tr><td>10</td><td>True</td><td>16</td><td>SGD</td><td>0.001</td><td>91.50%</td><td>89.89%</td></tr>
+  <tr><td>10</td><td>True</td><td>16</td><td>SGD</td><td>0.0001</td><td>89.71%</td><td>84.32%</td></tr>
+  <tr><td>10</td><td>True</td><td>16</td><td>Adam</td><td>0.001</td><td>91.89%</td><td>89.84%</td></tr>
+  <tr><td>10</td><td>True</td><td>16</td><td>Adam</td><td>0.0001</td><td>91.62%</td><td>91.52%</td></tr>
+  <tr><td>5</td><td>False</td><td>32</td><td>SGD</td><td>0.001</td><td>90.39%</td><td>88.18%</td></tr>
+  <tr><td>5</td><td>False</td><td>32</td><td>SGD</td><td>0.0001</td><td>84.40%</td><td>79.97%</td></tr>
+  <tr><td>5</td><td>False</td><td>32</td><td>Adam</td><td>0.001</td><td>92.22%</td><td>92.03%</td></tr>
+  <tr><td>5</td><td>False</td><td>32</td><td>Adam</td><td>0.0001</td><td>90.35%</td><td>89.98%</td></tr>
+</table>
+
+<h3>Key Observations (CNN)</h3>
+<ul>
+  <li>MNIST: Easy dataset; very high accuracy with little hyperparameter sensitivity.</li>
+  <li>FashionMNIST: More complex; strongly affected by model and optimizer.</li>
+  <li>Model: ResNet-18 matches or outperforms ResNet-50 with lower training cost.</li>
+  <li>Optimizer: Adam consistently outperforms SGD.</li>
+  <li>Learning Rate: 0.001 performs better than 0.0001.</li>
+  <li>Batch Size: Smaller batch improves generalization.</li>
+  <li>Pin Memory: No effect on accuracy.</li>
+  <li>Epochs: FashionMNIST benefits from more epochs.</li>
+</ul>
+
+<hr>
+
+<h2>Question 1(b): SVM Experiments</h2>
+
+<h3>MNIST Results</h3>
+<table>
+  <tr>
+    <th>Kernel</th>
+    <th>C</th>
+    <th>Degree</th>
+    <th>Accuracy</th>
+    <th>Time (ms)</th>
+  </tr>
+  <tr><td>RBF</td><td>1</td><td>-</td><td>94.45%</td><td>10285.51</td></tr>
+  <tr><td>RBF</td><td>10</td><td>-</td><td>95.55%</td><td>8977.22</td></tr>
+  <tr><td>Poly</td><td>1</td><td>2</td><td>94.15%</td><td>8220.28</td></tr>
+  <tr><td>Poly</td><td>1</td><td>3</td><td>93.40%</td><td>9914.45</td></tr>
+  <tr><td>Poly</td><td>10</td><td>2</td><td>95.20%</td><td>6378.44</td></tr>
+  <tr><td>Poly</td><td>10</td><td>3</td><td>94.10%</td><td>8375.44</td></tr>
+</table>
+
+<h3>FashionMNIST Results</h3>
+<table>
+  <tr>
+    <th>Kernel</th>
+    <th>C</th>
+    <th>Degree</th>
+    <th>Accuracy</th>
+    <th>Time (ms)</th>
+  </tr>
+  <tr><td>RBF</td><td>1</td><td>-</td><td>86.00%</td><td>9880.03</td></tr>
+  <tr><td>RBF</td><td>10</td><td>-</td><td>87.35%</td><td>10376.90</td></tr>
+  <tr><td>Poly</td><td>1</td><td>2</td><td>84.75%</td><td>8799.31</td></tr>
+  <tr><td>Poly</td><td>1</td><td>3</td><td>82.80%</td><td>19842.46</td></tr>
+  <tr><td>Poly</td><td>10</td><td>2</td><td>86.80%</td><td>8276.69</td></tr>
+  <tr><td>Poly</td><td>10</td><td>3</td><td>85.75%</td><td>8479.50</td></tr>
+</table>
+
+<h3>Key Observations (SVM)</h3>
+<ul>
+  <li>SVM performs well on MNIST but struggles on FashionMNIST.</li>
+  <li>Increasing <strong>C</strong> improves accuracy for both datasets.</li>
+  <li><strong>RBF kernel</strong> performs best overall.</li>
+  <li>Higher-degree polynomial kernels increase computation time without accuracy gain.</li>
+</ul>
+
+<hr>
+
+<h2>Question 2: Device Experiments</h2>
+
+<table>
+  <tr>
+    <th>Device</th>
+    <th>Optim</th>
+    <th>ResNet-18 Acc</th>
+    <th>ResNet-50 Acc</th>
+    <th>Time R18 (ms)</th>
+    <th>Time R50 (ms)</th>
+    <th>FLOPs R18</th>
+    <th>FLOPs R50</th>
+  </tr>
+  <tr><td>CPU</td><td>SGD</td><td>82.10%</td><td>81.01%</td><td>8593745.54</td><td>26735498.56</td><td>1.82e9</td><td>4.13e9</td></tr>
+  <tr><td>CPU</td><td>Adam</td><td>87.20%</td><td>88.10%</td><td>9342563.67</td><td>27645175.89</td><td>1.82e9</td><td>4.13e9</td></tr>
+  <tr><td>GPU</td><td>SGD</td><td>84.58%</td><td>79.55%</td><td>332970.71</td><td>1005069.34</td><td>1.82e9</td><td>4.13e9</td></tr>
+  <tr><td>GPU</td><td>Adam</td><td>90.50%</td><td>90.60%</td><td>346891.90</td><td>1038062.73</td><td>1.82e9</td><td>4.13e9</td></tr>
+</table>
+
+<h3>Key Observations</h3>
+<ul>
+  <li>GPU is significantly faster than CPU while FLOPs remain unchanged.</li>
+  <li>Adam achieves higher accuracy than SGD across devices.</li>
+  <li>ResNet-50 increases computation without consistent accuracy gains.</li>
+</ul>
+
+<hr>
+
+<h2>Best Model</h2>
+<p><strong>ResNet-18 with Adam optimizer on GPU</strong> provides the best trade-off between accuracy, training time, and computational efficiency.</p>
+
+<hr>
+
+<h2>Learning Outcomes</h2>
+<ul>
+  <li>Learned how dataset complexity affects model choice and performance.</li>
+  <li>Understood that deeper models do not always improve accuracy.</li>
+  <li>Gained insight into optimizer, learning rate, and hardware effects in ML-DLOps pipelines.</li>
+</ul>
+
+</body>
+</html>
