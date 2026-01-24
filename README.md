@@ -9,7 +9,7 @@
 ## Report & Code Links
 - **Question 1 (Colab):** [Link](https://colab.research.google.com/drive/15jMj5_K2rrH81WaOkINfthO4JYMyoqOM?usp=sharing)
 - **Question 2 (Colab):** [link](https://colab.research.google.com/drive/1Ov4oErNKU0z2_K5bxhefOYxpy49O3IIr)
-- **GitHub Repository:** [Link](https://github.com/arpitadeshmukh/MLOps-Arpita_Abhijit_Deshmukh-B23CM1007/tree/Assignment1)
+- **GitHub Pages:** [Link](https://arpitadeshmukh.github.io/MLOps-Arpita_Abhijit_Deshmukh-B23CM1007/)
 
 ---
 
