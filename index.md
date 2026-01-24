@@ -16,42 +16,45 @@
 ## Question 1(a): CNN Experiments
 
 ### Hyperparameters
-| Parameter | Values |
-|---------|--------|
-| Batch Size | 16, 32 |
-| Optimizer | SGD, Adam |
-| Learning Rate | 0.001, 0.0001 |
-| Model | ResNet-18, ResNet-50 |
-| Pin Memory | True, False |
-| Epochs | 5, 10 |
+| Parameter      | Values            |
+|---------------|-------------------|
+| Batch Size    | 16, 32            |
+| Optimizer     | SGD, Adam         |
+| Learning Rate | 0.001, 0.0001     |
+| Model         | ResNet-18, ResNet-50 |
+| Pin Memory    | True, False       |
+| Epochs        | 5, 10             |
+
 
 ---
 
 ### MNIST Results
-| Epochs | Pin | Batch | Optim | LR | ResNet-18 | ResNet-50 |
-|------|-----|-------|-------|----|-----------|-----------|
-| 5 | True | 16 | SGD | 0.001 | 99.34% | 99.13% |
-| 5 | True | 16 | SGD | 0.0001 | 98.27% | 97.63% |
-| 5 | True | 16 | Adam | 0.001 | 98.92% | 98.93% |
+| Epochs | Pin | Batch | Optim | LR     | ResNet-18 | ResNet-50 |
+|-------|-----|-------|-------|--------|-----------|-----------|
+| 5 | True | 16 | SGD  | 0.001  | 99.34% | 99.13% |
+| 5 | True | 16 | SGD  | 0.0001 | 98.27% | 97.63% |
+| 5 | True | 16 | Adam | 0.001  | 98.92% | 98.93% |
 | 5 | True | 16 | Adam | 0.0001 | 99.11% | 99.05% |
-| 5 | False | 32 | SGD | 0.001 | 99.03% | 98.93% |
+| 5 | False | 32 | SGD | 0.001  | 99.03% | 98.93% |
 | 5 | False | 32 | SGD | 0.0001 | 96.70% | 94.67% |
-| 5 | False | 32 | Adam | 0.001 | 99.18% | 98.51% |
+| 5 | False | 32 | Adam | 0.001  | 99.18% | 98.51% |
 | 5 | False | 32 | Adam | 0.0001 | 99.09% | 99.15% |
+
 
 ---
 
 ### FashionMNIST Results
-| Epochs | Pin | Batch | Optim | LR | ResNet-18 | ResNet-50 |
-|------|-----|-------|-------|----|-----------|-----------|
-| 10 | True | 16 | SGD | 0.001 | 91.50% | 89.89% |
-| 10 | True | 16 | SGD | 0.0001 | 89.71% | 84.32% |
-| 10 | True | 16 | Adam | 0.001 | 91.89% | 89.84% |
+| Epochs | Pin | Batch | Optim | LR     | ResNet-18 | ResNet-50 |
+|-------|-----|-------|-------|--------|-----------|-----------|
+| 10 | True | 16 | SGD  | 0.001  | 91.50% | 89.89% |
+| 10 | True | 16 | SGD  | 0.0001 | 89.71% | 84.32% |
+| 10 | True | 16 | Adam | 0.001  | 91.89% | 89.84% |
 | 10 | True | 16 | Adam | 0.0001 | 91.62% | 91.52% |
-| 5 | False | 32 | SGD | 0.001 | 90.39% | 88.18% |
+| 5 | False | 32 | SGD | 0.001  | 90.39% | 88.18% |
 | 5 | False | 32 | SGD | 0.0001 | 84.40% | 79.97% |
-| 5 | False | 32 | Adam | 0.001 | 92.22% | 92.03% |
+| 5 | False | 32 | Adam | 0.001  | 92.22% | 92.03% |
 | 5 | False | 32 | Adam | 0.0001 | 90.35% | 89.98% |
+
 
 ---
 
