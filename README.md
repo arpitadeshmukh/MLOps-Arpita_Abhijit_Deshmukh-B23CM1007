@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>ML-DLOps Assignment 1</title>
-</head>
-<body>
-
 # ML–DLOps Assignment 1
 
 **Name:** Arpita Abhijit Deshmukh  
@@ -139,6 +131,3 @@
 - Learned how dataset complexity affects model choice and performance.
 - Understood that deeper models do not always improve accuracy.
 - Gained insight into optimizer, learning rate, and hardware effects in ML-DLOps pipelines.
-
-</body>
-</html>
