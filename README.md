@@ -14,7 +14,7 @@ docker run distilbert-review-classifier
 
 ---
 
-## 📊 Evaluation Results
+## Evaluation Results
 
 - Accuracy: `0.625`
 - Macro F1: `0.628`
