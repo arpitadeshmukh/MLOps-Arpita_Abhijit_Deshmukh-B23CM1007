@@ -31,4 +31,4 @@ Model available at:
 
 ---
 
-Note: Other results like training loss grph and confucion matrix can also be found in `results/`
+Note: Other results like training loss graph and confusion matrix can also be found in `results/`
