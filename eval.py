@@ -14,7 +14,6 @@ from sklearn.metrics import (
 
 from utils import prepare_datasets, ReviewsDataset
 
-
 MODEL_PATH = "distilbert-reviews-genres"
 MAX_LENGTH = 512
 
