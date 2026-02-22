@@ -3,3 +3,8 @@ transformers
 huggingface_hub
 scikit-learn
 numpy
+matplotlib
+seaborn
+requests
+accelerate
+datasets
