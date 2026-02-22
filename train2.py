@@ -10,7 +10,7 @@ from transformers import (
 )
 
 from sklearn.metrics import accuracy_score
-from utils2 import prepare_datasets, ReviewsDataset
+from utils import prepare_datasets, ReviewsDataset
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -32,7 +32,7 @@ def compute_metrics(pred):
 
 if __name__ == "__main__":
 
-    print("Preparing dataset...")
+    print("Preparing dataset")
     train_texts, train_labels, test_texts, test_labels = prepare_datasets()
 
     unique_labels = sorted(set(train_labels))
@@ -92,13 +92,13 @@ if __name__ == "__main__":
     # ==========================
     # Training
     # ==========================
-    print("Training...")
+    print("Training")
     trainer.train()
 
     # ==========================
     # Save Loss Curves
     # ==========================
-    print("Saving loss curves...")
+    print("Saving loss curves")
 
     log_history = trainer.state.log_history
     train_loss = []
@@ -128,7 +128,7 @@ if __name__ == "__main__":
     # ==========================
     # Evaluation
     # ==========================
-    print("Evaluating...")
+    print("Evaluating")
     metrics = trainer.evaluate()
     print(metrics)
 
