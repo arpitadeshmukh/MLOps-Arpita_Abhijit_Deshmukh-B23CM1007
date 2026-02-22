@@ -12,7 +12,7 @@ from sklearn.metrics import (
     f1_score
 )
 
-from utils2 import prepare_datasets, ReviewsDataset
+from utils import prepare_datasets, ReviewsDataset
 
 
 MODEL_PATH = "distilbert-reviews-genres"
@@ -23,7 +23,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 if __name__ == "__main__":
 
-    print("Preparing dataset...")
+    print("Preparing dataset")
     _, _, test_texts, test_labels = prepare_datasets()
 
     tokenizer = DistilBertTokenizerFast.from_pretrained(MODEL_PATH)
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     predictions = []
     total_loss = 0
 
-    print("Running inference...")
+    print("Running inference")
 
     with torch.no_grad():
         for batch in test_dataset:
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     # ==========================
     # Confusion Matrix
     # ==========================
-    print("Saving confusion matrix...")
+    print("Saving confusion matrix")
 
     cm = confusion_matrix(test_labels_encoded, predictions)
 
