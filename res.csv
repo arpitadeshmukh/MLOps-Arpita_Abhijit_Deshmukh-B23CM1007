@@ -1,0 +1,11 @@
+LoRA layers,Rank,Alpha,Dropout,Overall Test Accuracy,Trainable Parameters used
+Without,N/A,N/A,N/A,79.54%,38500
+With,4,8,0.1,90.11%,112228
+With,8,2,0.1,89.84%,185956
+With,4,2,0.1,90.27%,112228
+With,4,4,0.1,90.00%,112228
+With,8,8,0.1,90.25%,185956
+With,2,8,0.1,89.70%,75364
+With,2,4,0.1,89.76%,75364
+With,2,2,0.1,89.78%,75364
+With,8,4,0.1,89.98%,185956

@@ -1,0 +1,15 @@
+{
+    "Clean_ResNet18_Acc": 72.69,
+    "FGSM_Scratch_Accs": [
+        58.86,
+        22.16,
+        8.55
+    ],
+    "FGSM_ART_Accs": [
+        67.31,
+        35.77,
+        21.94
+    ],
+    "PGD_Detection_Acc": 100.0,
+    "BIM_Detection_Acc": 100.0
+}
