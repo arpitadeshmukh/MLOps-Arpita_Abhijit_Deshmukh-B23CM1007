@@ -1,0 +1,9 @@
+torch
+torchvision
+timm
+optuna
+wandb
+pandas
+peft
+huggingface_hub
+tqdm
