@@ -1,1 +1,2 @@
-This is an official repository for submission for MLOps Assignments
+git fetch origin
+git checkout -b MLDLOPs-Exam2026 origin/MLDLOPs-Exam2026
